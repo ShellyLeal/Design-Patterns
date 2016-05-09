@@ -1,0 +1,18 @@
+//Shape:  abstract class; extended by Circle e Square
+//Circle: concrete class
+//RedCircle and GreenCircle: concrete bridge implemented classes 
+public class PatternDemo {
+   public static void main(String[] args) {
+      Sheet one = new Sheet("Paper 1"); // Sheet: mediator class
+      Sheet two = new Sheet("Paper 2");
+      one.redCircle = new Circle(one.getName(),100,100, 10, new RedCircle(),null);
+      one.redCircle.draw();
+      one.greenCircle = new Circle(one.getName(),100,100, 10, new GreenCircle(),null);
+      one.greenCircle.draw();
+      two.redCircle = new Circle(two.getName(),150,150, 20, new RedCircle(),null);
+      two.redCircle.draw();
+      Sheet three = new Sheet("Paper 3");
+      three.square = new Square(three.getName(),8,null,new BlueSquare());
+      three.square.draw();
+   }
+}
