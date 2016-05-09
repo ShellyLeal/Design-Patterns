@@ -1,0 +1,9 @@
+public class BlueSquare implements DrawAPII {
+	
+	@Override
+	public void drawSquare(String name,int x) {
+		System.out.println(name + ": Drawing Square[ color: blue , Sizes: " + x + ", " + x + "]");
+			
+	}
+
+}
