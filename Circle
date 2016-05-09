@@ -1,0 +1,15 @@
+public class Circle extends Shape {
+  private int x, y, radius;
+  String name;
+   public Circle(String s, int x, int y, int radius, DrawAPI drawAPI,DrawAPII drawAPII) {
+      super(drawAPI, drawAPII);
+      this.x = x;  
+      this.y = y;  
+      this.radius = radius;
+      name = s;
+   }
+
+   public void draw() {
+      drawAPI.drawCircle(name,radius,x,y);
+   }
+}
