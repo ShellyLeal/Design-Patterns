@@ -1,0 +1,5 @@
+
+public interface DrawAPII {
+	public void drawSquare(String name,int x);
+
+}
