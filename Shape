@@ -1,0 +1,11 @@
+public abstract class Shape {
+   protected DrawAPI drawAPI;
+   protected DrawAPII drawAPII;
+
+   protected Shape(DrawAPI drawAPI,DrawAPII drawAPII){
+      this.drawAPI = drawAPI;
+      this.drawAPII = drawAPII;
+
+   }
+   public abstract void draw();	
+}
