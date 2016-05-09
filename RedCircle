@@ -1,0 +1,10 @@
+
+public class RedCircle implements DrawAPI {
+	
+	@Override
+	public void drawCircle(String name,int radius, int x, int y) {
+		System.out.println(name + ": Drawing Circle[ color: red, radius: " + radius + ", x: " + x + ", " + y + "]");
+			
+	}
+
+}
