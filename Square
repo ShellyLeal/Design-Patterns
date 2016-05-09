@@ -1,0 +1,15 @@
+public class Square extends Shape{
+  private int x;
+  String name;
+  public Square(String s, int x,  DrawAPI drawAPI,DrawAPII drawAPII) {
+      super(drawAPI, drawAPII);
+	  this.x = x;  
+ 
+      name = s;
+   }
+
+   public void draw() {
+	   drawAPII.drawSquare(name,x);
+   }
+	
+}
